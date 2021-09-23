@@ -1,4 +1,4 @@
-import { Suspense, useRef } from "react"
+import { Suspense } from "react"
 import { lazy } from "react"
 import  {useNearScreen}  from "../../hooks/useNearScreen"
 import Loader from "../Loader"

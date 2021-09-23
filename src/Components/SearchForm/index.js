@@ -2,21 +2,21 @@ import { memo } from "react";
 import { useState } from "react";
 
 const SearchForm = ({onSubmit}) => {
-    const [keyWord, setKeyWord] = useState("");
+    const [keyword, setkeyword] = useState("");
     
     const handleSubmit = (ev) => {
         ev.preventDefault();
-        onSubmit(keyWord)
+        onSubmit(keyword)
     };
     
     const handleChange = (ev) => {
-        setKeyWord(ev.target.value);
+        setkeyword(ev.target.value);
       };
 
   return (
     <form onSubmit={handleSubmit}>
       <button>Buscar</button>
-      <input type="text" value={keyWord} onChange={handleChange} />
+      <input type="text" value={keyword} onChange={handleChange} />
     </form>
   );
 };

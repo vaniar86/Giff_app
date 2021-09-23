@@ -116,3 +116,40 @@ i {
     font-size: 1em;
   }
 }
+
+
+/*########### Not Found ################*/
+
+.FourOhFour {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #424040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    mix-blend-mode: overlay;
+  }
+  
+  .code {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 144px;
+    height: 100vh;
+    color: rgb(255, 249, 249);
+    width: 100%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+  }

@@ -27,12 +27,12 @@ export const useGif = ({ keyword } = { keyword: null }) => {
 
   useEffect(() => {
     if (page === INITIAL_PAGE) return;
-    setLoadingPage(true)
+    setLoadingPage(true);
     getApiGif({ keyword: keywordToUse, page }).then((nextGifs) => {
       setGifs((prevGif) => prevGif.concat(nextGifs));
-      setLoadingPage(true)
+      setLoadingPage(true);
     });
-  }, [page, keywordToUse,setGifs]);
+  }, [page, keywordToUse, setGifs]);
 
   return { loading, gifs, setPage, loadingPage };
 };
